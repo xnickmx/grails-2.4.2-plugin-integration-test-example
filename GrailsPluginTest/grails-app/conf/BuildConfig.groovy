@@ -44,5 +44,7 @@ grails.project.dependency.resolution = {
               ":rest-client-builder:1.0.3") {
             export = false
         }
+        // if the Hibernate dependency is omitted, then the integration tests fail
+        test ":hibernate4:4.3.5.4" // or ":hibernate:3.6.10.16"
     }
 }
